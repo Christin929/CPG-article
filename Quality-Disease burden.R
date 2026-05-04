@@ -22,7 +22,7 @@ ALL_VARS   <- c(IV, COVARS, OUTCOMES)
 set.seed(SEED)
 
 # 2. Data Cleaning and Standardization
-df_raw <- read_excel(FILE_PATH, sheet = "All domains＞70%")
+df_raw <- read_excel(FILE_PATH, sheet = SHEET_NAME)
 
 df_clean <- df_raw %>%
   mutate(
